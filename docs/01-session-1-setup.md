@@ -175,6 +175,7 @@ Follow the instructions on the screen to complete sign up. You may be asked to e
 When you see the "Customize Your Experience" screen:
 - For "How do you plan to use Cursor?" select **With a Team**
 - For "Which role best describes you?" select **Student**
+- Turn **off** the "Share Data" option
 - Click **Continue**
 
 If asked to "Claim a free Pro trial", you can click **Skip for now**.
