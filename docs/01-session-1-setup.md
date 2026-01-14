@@ -184,6 +184,7 @@ When you see the "Review Settings" screen:
 - Click **Connect** next to GitHub to link your GitHub account
 - A GitHub authorization page will open in your browser
 - Click **Authorize Cursor** to allow access to your GitHub repositories (you can authorize for all repositories)
+- On the "Link GitHub Account" screen, verify your accounts and click **Link Account**
 - Click **Continue**
 
 If you already have a Cursor account, sign in instead.
