@@ -276,7 +276,6 @@ Break the plan into specific, actionable tasks.
    /speckit.tasks
 
    Generate implementation tasks from the plan.
-   Create tasks that are small enough to complete in 30-60 minutes each.
    ```
 
 2. Claude will output a list of tasks
