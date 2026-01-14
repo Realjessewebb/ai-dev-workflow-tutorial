@@ -165,7 +165,7 @@ This creates the necessary configuration files for spec-kit to work with Claude 
 2. A `.specify/` directory should now exist in your project
 3. A `.claude/commands/` directory should be created with the spec-kit slash commands
 
-To verify, run:
+To verify, run in the terminal:
 ```bash
 ls -la .specify/
 ls -la .claude/commands/
@@ -183,7 +183,7 @@ The constitution establishes principles and guidelines for your project. It ensu
 
 **Steps:**
 
-1. Start Claude Code:
+1. In the terminal, start Claude Code:
    ```bash
    claude
    ```
@@ -385,7 +385,7 @@ First, create a virtual environment for your project dependencies.
    - Installing dependencies
    - Creating requirements.txt
 
-**Manual steps (if you prefer):**
+**Manual steps (if you prefer) — run these in the terminal:**
 
 ```bash
 # Create virtual environment
@@ -446,6 +446,7 @@ Now use Claude Code to build the dashboard.
 
 **Test the dashboard:**
 
+In the terminal (not Claude Code), run:
 ```bash
 streamlit run app.py
 ```
