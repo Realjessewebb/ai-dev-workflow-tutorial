@@ -6,7 +6,7 @@ This session covers account creation, tool installation, and initial configurati
 
 - [1. Create Accounts](#1-create-accounts)
   - [1.1 Create a GitHub Account](#11-create-a-github-account)
-  - [1.2 Create an Atlassian (Jira) Account](#12-create-an-atlassian-jira-account)
+  - [1.2 Create an Atlassian (Jira) Account and Project](#12-create-an-atlassian-jira-account-and-project)
   - [1.3 Subscribe to Claude Pro](#13-subscribe-to-claude-pro)
 - [2. Install Software](#2-install-software)
   - [2.1 Install Cursor](#21-install-cursor)
@@ -19,9 +19,8 @@ This session covers account creation, tool installation, and initial configurati
 - [3. Fork and Clone the Tutorial Repository](#3-fork-and-clone-the-tutorial-repository)
   - [3.1 Fork the Repository](#31-fork-the-repository)
   - [3.2 Clone Your Fork Locally](#32-clone-your-fork-locally)
-- [4. Create Jira Project](#4-create-jira-project)
-- [5. Connect GitHub and Jira](#5-connect-github-and-jira)
-- [6. Session 1 Verification](#6-session-1-verification)
+- [4. Connect GitHub and Jira](#4-connect-github-and-jira)
+- [5. Session 1 Verification](#5-session-1-verification)
 - [Common Issues](#common-issues)
 - [What's Next](#whats-next)
 
@@ -62,20 +61,31 @@ GitHub is where your code lives. It is the industry standard for version control
 
 1. Open your browser and go to [github.com](https://github.com)
 2. Click **Sign up**
-3. Enter your email address
-4. Create a password
-5. Choose a username (this will be visible publicly, so choose something professional)
-6. Complete the verification puzzle
-7. Click **Create account**
-8. Verify your email by clicking the link GitHub sends you
+3. You can sign up using one of these options:
+   - Click **Continue with Google** to use your Google account
+   - Click **Continue with Apple** to use your Apple account
+   - Or fill out the form manually (see below)
+
+**If signing up manually:**
+
+4. Enter your **Email** address
+5. Create a **Password** (at least 15 characters, OR at least 8 characters with a number and lowercase letter)
+6. Choose a **Username** (this will be visible publicly, so choose something professional)
+   - Usernames can only contain letters, numbers, and single hyphens
+   - Cannot begin or end with a hyphen
+7. Select your **Country/Region**
+8. Optionally check the email preferences box
+9. Click **Create account**
+10. Complete the verification puzzle if prompted
+11. Verify your email by clicking the link GitHub sends you
 
 **Checkpoint:** You should be able to log into github.com and see your dashboard.
 
 ---
 
-### 1.2 Create an Atlassian (Jira) Account
+### 1.2 Create an Atlassian (Jira) Account and Project
 
-Jira is the most widely used project management tool for teams building with technology. It tracks tasks, bugs, and features.
+Jira is the most widely used project management tool for teams building with technology. It tracks tasks, bugs, and features. During signup, you will also create your first project.
 
 **Steps:**
 
@@ -87,9 +97,23 @@ Jira is the most widely used project management tool for teams building with tec
 4. When asked about your role, select an appropriate option (Student or Developer)
 5. When asked what you want to use, select **Jira Software**
 6. Name your site (this becomes your workspace URL, e.g., `yourname.atlassian.net`)
-7. Complete the onboarding steps
 
-**Checkpoint:** You should be able to access your Jira workspace at `yourname.atlassian.net`.
+**During onboarding, Jira will ask you to create your first project. Use these answers:**
+
+| Question | Answer |
+|----------|--------|
+| What kind of work do you do? | **Other** |
+| Select a project template | **Scrum** |
+| Name your first project | **E-Commerce Analytics** |
+| What types of work do you need? | **Task** |
+| How do you track work? | **To Do, In Progress, Done** |
+
+**Important:** After creating the project, find and note the project **Key**. It should be something like `ECOM` or `ECO`. If it's different from `ECOM`, you can change it:
+1. Go to **Project settings** (gear icon in the project sidebar)
+2. Click **Details**
+3. Change the **Key** to `ECOM`
+
+**Checkpoint:** You should be able to access your Jira workspace at `yourname.atlassian.net` and see your ECOM project.
 
 ---
 
@@ -419,30 +443,9 @@ Cloning downloads the repository to your computer. Cursor has a built-in feature
 
 ---
 
-## 4. Create Jira Project
+## 4. Connect GitHub and Jira
 
-### 4.1 Create a New Project
-
-**Steps:**
-
-1. Go to your Jira workspace (`yourname.atlassian.net`)
-2. Click **Projects** in the left sidebar
-3. Click **Create project**
-4. Select **Scrum** or **Kanban** (either works for this tutorial)
-5. Click **Use template**
-6. Configure the project:
-   - **Name:** E-Commerce Analytics
-   - **Key:** ECOM (this is important — use exactly ECOM)
-   - **Access:** Keep default settings
-7. Click **Create project**
-
-**Checkpoint:** You can access your ECOM project and see an empty board.
-
----
-
-## 5. Connect GitHub and Jira
-
-### 5.1 Install GitHub for Jira
+### 4.1 Install GitHub for Jira
 
 This integration connects your GitHub commits and pull requests to Jira issues.
 
@@ -472,7 +475,7 @@ This integration connects your GitHub commits and pull requests to Jira issues.
 
 ---
 
-## 6. Session 1 Verification
+## 5. Session 1 Verification
 
 Before finishing Session 1, verify everything is set up correctly:
 
