@@ -22,9 +22,8 @@ This session covers the complete development workflow: from connecting Claude Co
 - [6. Commit Your Changes](#6-commit-your-changes)
   - [6.1 Ask Claude Code to Commit](#61-ask-claude-code-to-commit)
 - [7. Push and Create Pull Request](#7-push-and-create-pull-request)
-  - [7.1 Push Your Branch](#71-push-your-branch)
-  - [7.2 Create Pull Request](#72-create-pull-request)
-  - [7.3 Verify Jira Integration](#73-verify-jira-integration)
+  - [7.1 Ask Claude Code to Push and Create PR](#71-ask-claude-code-to-push-and-create-pr)
+  - [7.2 Verify Jira Integration](#72-verify-jira-integration)
 - [8. Merge the Pull Request](#8-merge-the-pull-request)
   - [8.1 Review and Merge](#81-review-and-merge)
   - [8.2 Update Local Repository](#82-update-local-repository)
@@ -553,62 +552,34 @@ This format ensures:
 
 ## 7. Push and Create Pull Request
 
-Now push your changes to GitHub and create a pull request.
+Now push your changes to GitHub and create a pull request. Claude Code can handle this for you.
 
-### 7.1 Push Your Branch
+### 7.1 Ask Claude Code to Push and Create PR
 
 **Steps:**
 
-1. Push the branch to your GitHub fork:
-   ```bash
-   git push -u origin feature/ECOM-1-add-sales-dashboard
+1. In Claude Code, ask it to push and create a pull request:
+   ```
+   Push my branch and create a pull request.
+   Include "Resolves ECOM-1" in the PR description.
    ```
 
-   **Understanding this command:**
-   - `git push` — Uploads commits to the remote repository
-   - `-u origin` — Sets up tracking between local and remote branch
-   - `feature/ECOM-1-add-sales-dashboard` — The branch to push
+2. Claude will:
+   - Push your branch to GitHub
+   - Create a pull request with a summary of your changes
+   - Include the Jira issue reference
 
-2. You may be prompted for GitHub credentials. If using HTTPS, enter your username and a personal access token (not your password).
+3. You may be prompted for GitHub credentials. If using HTTPS, enter your username and a personal access token (not your password).
 
-**Checkpoint:** Git reports the push was successful.
+4. Claude will provide a link to the pull request — click it to view on GitHub.
 
----
-
-### 7.2 Create Pull Request
-
-**Steps:**
-
-1. Go to your forked repository on GitHub
-2. You should see a banner saying "feature/ECOM-1-add-sales-dashboard had recent pushes" with a **Compare & pull request** button
-3. Click **Compare & pull request**
-4. Fill in the pull request:
-   - **Title:** `ECOM-1: Add sales dashboard with KPIs and charts`
-   - **Description:**
-     ```
-     ## Summary
-     - Added Streamlit dashboard for e-commerce sales analytics
-     - Implemented Total Sales and Total Orders KPI cards
-     - Added sales trend line chart
-     - Added sales by category and region bar charts
-
-     ## Test Plan
-     - Run `streamlit run app.py` to verify dashboard works
-     - Confirm all charts display correct data from CSV
-
-     Resolves ECOM-1
-     ```
-
-   **Note:** "Resolves ECOM-1" is a special keyword that tells GitHub and Jira this pull request completes the ECOM-1 task. When the PR is merged, Jira can automatically update the issue status.
-
-5. Verify the base branch is `main` and the compare branch is your feature branch
-6. Click **Create pull request**
+**Note:** "Resolves ECOM-1" is a special keyword that tells GitHub and Jira this pull request completes the ECOM-1 task. When the PR is merged, Jira can automatically update the issue status.
 
 **Checkpoint:** Pull request is created and visible on GitHub.
 
 ---
 
-### 7.3 Verify Jira Integration
+### 7.2 Verify Jira Integration
 
 If the GitHub-Jira integration is working:
 
