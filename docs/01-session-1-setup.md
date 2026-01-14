@@ -50,7 +50,7 @@ GitHub is where your code lives. It is the industry standard for version control
 
 ### 1.2 Create an Atlassian (Jira) Account
 
-Jira is the most widely used project management tool in software development. It tracks tasks, bugs, and features.
+Jira is the most widely used project management tool for teams building with technology. It tracks tasks, bugs, and features.
 
 **Steps:**
 

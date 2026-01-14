@@ -4,7 +4,7 @@
 
 ### What is the purpose of this tutorial?
 
-This tutorial teaches you a complete, industry-standard software development workflow using modern AI tools. You will learn how professional teams go from requirements to shipped code with full traceability.
+This tutorial teaches you a complete, industry-standard workflow for building technology solutions using modern AI tools. You will learn how professional teams go from requirements to shipped solutions with full traceability.
 
 ### Do I need prior experience with these tools?
 
@@ -96,7 +96,7 @@ Bad: `fixed stuff` / `work in progress` / `asdfasdf`
 
 ### Why do we use Jira?
 
-Jira is the most widely used project management tool in software development. Learning it prepares you for professional environments. It provides:
+Jira is the most widely used project management tool for teams building with technology. Learning it prepares you for professional environments. It provides:
 - Visibility into what everyone is working on
 - Tracking of progress toward goals
 - Connection between tasks and code changes

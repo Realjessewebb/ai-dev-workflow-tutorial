@@ -351,4 +351,4 @@ This **traceability** is valuable because:
 
 ## Next Steps
 
-Now that you understand Git concepts, you're ready for [Session 1: Setup](01-session-1-setup.md) where you'll put these concepts into practice.
+Now that you understand Git concepts, continue to [Session 2: Workflow](04-session-2-workflow.md) where you'll put these concepts into practice.
