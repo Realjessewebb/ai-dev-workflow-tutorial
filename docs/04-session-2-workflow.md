@@ -125,9 +125,23 @@ First, initialize spec-kit in your project:
 specify init . --ai claude
 ```
 
-This creates the necessary configuration files for spec-kit to work with Claude Code.
+This creates the necessary configuration files for spec-kit to work with Claude Code, including the slash commands you will use in the following steps.
 
-**Checkpoint:** You should see a `.specify` directory or configuration files created in your project.
+**Checkpoint:** Verify the initialization succeeded:
+
+1. You should see output confirming the initialization completed
+2. A `.specify/` directory should now exist in your project
+3. A `.claude/commands/` directory should be created with the spec-kit slash commands
+
+To verify, run:
+```bash
+ls -la .specify/
+ls -la .claude/commands/
+```
+
+You should see files like `speckit.constitution.md`, `speckit.specify.md`, etc. in the `.claude/commands/` directory.
+
+**Important:** The slash commands (`/speckit.constitution`, `/speckit.specify`, etc.) will NOT work until this initialization step completes successfully. If you don't see these directories, re-run the `specify init` command.
 
 ---
 
