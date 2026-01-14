@@ -336,35 +336,26 @@ Create a Jira issue in the ECOM project:
 
 Now create a Git branch for your work. This keeps your changes isolated from the main codebase.
 
-### 4.1 Create and Switch to Branch
+### 4.1 Ask Claude Code to Create Branch
 
 **Steps:**
 
-1. Make sure you are in your project directory in Cursor's terminal
-2. Ensure you are on the main branch and up to date:
-   ```bash
-   git checkout main
-   git pull origin main
+1. In Claude Code, ask it to create a feature branch:
+   ```
+   Create a feature branch for Jira issue ECOM-1 to add a sales dashboard.
    ```
 
-3. Create a new feature branch:
-   ```bash
-   git checkout -b feature/ECOM-1-add-sales-dashboard
-   ```
+2. Claude will:
+   - Ensure you're on the main branch and up to date
+   - Create a new branch named `feature/ECOM-1-add-sales-dashboard`
+   - Switch to the new branch
 
-**Understanding this command:**
-- `git checkout -b` creates a new branch AND switches to it
+**Understanding branch naming:**
 - `feature/` is a prefix indicating this is a feature branch
 - `ECOM-1` is the Jira issue key (this enables traceability)
 - `add-sales-dashboard` describes what the branch does
 
-4. Verify you are on the new branch:
-   ```bash
-   git branch
-   ```
-   The current branch will have an asterisk (*) next to it.
-
-**Checkpoint:** Running `git branch` shows `feature/ECOM-1-add-sales-dashboard` with an asterisk.
+**Checkpoint:** Claude confirms you are on the new feature branch.
 
 ---
 
@@ -620,16 +611,18 @@ Before merging, review your own code using this checklist:
 
 ### 8.2 Update Local Repository
 
-After merging, update your local main branch:
+After merging, update your local main branch.
 
-```bash
-git checkout main
-git pull origin main
-```
+**Steps:**
 
-Your local main branch now includes the dashboard code.
+1. In Claude Code, ask it to update your local repository:
+   ```
+   Switch to main and pull the latest changes.
+   ```
 
-**Checkpoint:** Running `git log --oneline` on main shows your merged commit.
+2. Claude will switch to the main branch and pull the merged code.
+
+**Checkpoint:** Claude confirms you are on main with the latest changes.
 
 **What just happened?** Your dashboard code is now part of the `main` branch — the "official" version of your project. In a real team environment, this code would be deployed to a server for users to access. The feature branch (`feature/ECOM-1-add-sales-dashboard`) is no longer needed and can be deleted.
 
