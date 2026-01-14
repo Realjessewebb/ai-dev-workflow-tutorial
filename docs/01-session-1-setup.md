@@ -177,6 +177,8 @@ When you see the "Customize Your Experience" screen:
 - For "Which role best describes you?" select **Student**
 - Click **Continue**
 
+If asked to "Claim a free Pro trial", you can click **Skip for now**.
+
 If you already have a Cursor account, sign in instead.
 
 **Checkpoint:** You should be able to open Cursor and see the welcome screen or an empty editor.
