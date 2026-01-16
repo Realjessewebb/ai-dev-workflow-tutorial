@@ -223,6 +223,8 @@ The specification refines the PRD (Product Requirements Document — the documen
 > - No need to copy/paste — the entire file is included automatically
 > - Works with any file type: code, markdown, CSV, etc.
 > - You can reference multiple files: `@file1.py @file2.py`
+>
+> This is an example of **context engineering** — the practice of giving AI the right information to get better results. The more relevant context you provide, the more accurate and useful Claude's responses will be.
 
 **Steps:**
 
