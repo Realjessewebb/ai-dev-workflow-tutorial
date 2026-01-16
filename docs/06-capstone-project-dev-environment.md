@@ -85,8 +85,8 @@ Click **Backlog** (tab to the left of "Board") — this is where Jira issues cre
 
 - [ ] **Connect Claude Code to your new Jira project**
   - Each team member must connect the Atlassian MCP to the new project
-  - In Claude Code, run `/mcp`, select **atlassian**, and authenticate
-  - This is the same process from the tutorial, but now for your capstone Jira project
+  - Follow the same steps from [Section 1 of the tutorial](04-session-2-workflow.md#1-connect-claude-code-to-jira): run `/mcp`, select **atlassian**, and authenticate
+  - This time you'll be connecting to your capstone Jira project instead of the tutorial project
 
 ### Development Environment
 
