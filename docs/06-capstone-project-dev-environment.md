@@ -359,29 +359,31 @@ Claude Code is most helpful when you:
 
 ## 7. Common Capstone Patterns
 
-### Starting a New Feature
+### Working on a Jira Issue
 
-Follow the spec-kit workflow from [Section 4](#4-spec-kit-workflow-for-capstone):
+After completing the spec-kit setup (steps 1-5 in [Section 4](#4-spec-kit-workflow-for-capstone)), work through each issue:
 
 1. **Pick a Jira issue** and assign it to yourself
-2. **Switch to your feature branch** — spec-kit created this when you ran `/speckit.specify`:
+2. **Implement** using `/speckit.implement`:
    ```
-   Switch to my feature branch
+   /speckit.implement
+
+   Implement PROJ-123 and move it to In Progress in Jira.
    ```
-3. **Implement** using `/speckit.implement`
-4. **Commit and push**:
+3. **Commit and push**:
    ```
    Commit my changes for PROJ-123 and push to GitHub
    ```
-5. **Update Jira** with evidence:
+4. **Update Jira** with evidence:
    ```
    Update PROJ-123 in Jira with a comment summarizing what was implemented,
    the commit hash, branch name, and GitHub link. Move it to Done.
    ```
-6. **Merge to main**:
-   ```
-   Merge my branch to main and push
-   ```
+
+Repeat steps 1-4 for each issue. When all issues are complete, merge your feature branch to main:
+```
+Merge my branch to main and push
+```
 
 > **Tip:** Claude Code handles the git commands for you. Just describe what you want in plain English.
 
@@ -502,50 +504,24 @@ Help me deploy my [Flask/React/etc.] app. What are my options?
 │              Quick Reference - Claude Code                   │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  Start new work:                                            │
-│  "Pull latest main and create branch for PROJ-123"          │
+│  Implement an issue:                                        │
+│  /speckit.implement                                         │
+│  "Implement PROJ-123 and move it to In Progress in Jira"    │
 │                                                             │
 │  Save work:                                                 │
 │  "Commit my changes for PROJ-123 and push to GitHub"        │
 │                                                             │
 │  Update Jira:                                               │
 │  "Update PROJ-123 with commit hash, branch, and GitHub      │
-│   link. Mark it Done."                                      │
+│   link. Move it to Done."                                   │
 │                                                             │
 │  Update from main:                                          │
 │  "Pull latest changes from main into my branch"             │
 │                                                             │
-│  Check status:                                              │
-│  "What's the git status?"                                   │
+│  Merge when all issues are done:                            │
+│  "Merge my branch to main and push"                         │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
-
-<details>
-<summary>Traditional git commands (for reference)</summary>
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│              Quick Reference - Git Commands                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  Start new work:                                            │
-│  git checkout main && git pull                              │
-│  git checkout -b feature/PROJ-123-description               │
-│                                                             │
-│  Save work:                                                 │
-│  git add . && git commit -m "PROJ-123: description"         │
-│  git push -u origin feature/PROJ-123-description            │
-│                                                             │
-│  Update from main:                                          │
-│  git fetch origin && git merge origin/main                  │
-│                                                             │
-│  Check status:                                              │
-│  git status && git log --oneline -5                         │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-</details>
 
 Good luck with your capstone! You have the skills and tools to succeed.
