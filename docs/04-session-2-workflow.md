@@ -477,6 +477,8 @@ After completing the first issue, save your work and update Jira to show evidenc
 
    *Replace `ECOM-1` with your actual issue key.*
 
+   > **Tip:** With Claude Code, you don't need to memorize git commands. Just describe what you want in natural language, and Claude handles the rest.
+
    > **What is .gitignore?** This file tells Git which files to ignore. The `venv/` folder contains installed packages that can be recreated from `requirements.txt`, so we don't store it in Git.
 
 2. Push to GitHub:
