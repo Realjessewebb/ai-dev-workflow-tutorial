@@ -482,8 +482,8 @@ Now that you have the repository open in Cursor, let's initialize Claude Code so
 4. Claude Code will analyze the repository and create a `CLAUDE.md` file
 5. When it's done, preview `CLAUDE.md` with rendered markdown:
    - Click on `CLAUDE.md` in the file explorer to open it
-   - Press `Cmd+Shift+V` (macOS) or `Ctrl+Shift+V` (Windows) to open the preview
-   - Or right-click the file tab and select **Open Preview**
+   - Right-click the file tab and select **Open Preview**
+   - The preview shows the formatted markdown instead of the raw code
 
 **Take a moment to read the `CLAUDE.md` file.** This file helps Claude Code understand:
 - What the project is about
