@@ -398,7 +398,7 @@ npm comes with Node.js. Install Node.js first:
 1. Go to [nodejs.org](https://nodejs.org)
 2. Download the **LTS** version (recommended for most users)
 3. Run the installer and follow the prompts
-4. Restart Cursor
+4. Open a new terminal (Terminal → New Terminal)
 
 Then install Claude Code:
 ```bash
