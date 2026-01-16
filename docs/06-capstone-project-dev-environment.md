@@ -10,7 +10,7 @@ This guide walks you through setting up your capstone project using the same wor
 
 1. [What You Have Learned](#1-what-you-have-learned)
 2. [Capstone Project Setup Checklist](#2-capstone-project-setup-checklist)
-3. [Write Your PRD](#3-write-your-prd)
+3. [Update Your PRD](#3-update-your-prd)
 4. [Spec-Kit Workflow for Capstone](#4-spec-kit-workflow-for-capstone)
 5. [Team Workflow](#5-team-workflow)
 6. [Best Practices for Capstone Success](#6-best-practices-for-capstone-success)
@@ -127,7 +127,7 @@ One team member creates the Jira project, then invites the rest of the team.
 
 ---
 
-## 3. Write Your PRD
+## 3. Update Your PRD
 
 In the tutorial, you used a provided PRD. For your capstone, you'll revise the PRD you submitted last semester.
 
