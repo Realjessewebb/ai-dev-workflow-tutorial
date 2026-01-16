@@ -6,7 +6,7 @@ This session covers the complete development workflow: from connecting Claude Co
 
 - [Before You Begin: Prerequisites Check](#before-you-begin-prerequisites-check)
 - [1. Connect Claude Code to Jira](#1-connect-claude-code-to-jira)
-  - [1.1 Add Atlassian MCP Server](#11-add-atlassian-mcp-server)
+  - [1.1 Add Atlassian Rovo MCP Server](#11-add-atlassian-mcp-server)
 - [2. Spec-Kit Workflow](#2-spec-kit-workflow)
   - [2.1 Initialize Spec-Kit](#21-initialize-spec-kit)
   - [2.2 Create the Constitution](#22-create-the-constitution)
@@ -70,7 +70,7 @@ claude --version
 │                                                             │
 │  MCP Integration:           Spec-Kit Artifacts:             │
 │  ───────────────            ─────────────────               │
-│  • Atlassian MCP connected  • Constitution created          │
+│  • Atlassian Rovo MCP connected  • Constitution created          │
 │  • Claude reads Jira        • Specification refined         │
 │                             • Implementation plan           │
 │                             • Task breakdown                │
@@ -90,14 +90,14 @@ claude --version
 
 **What is MCP?** The Model Context Protocol (MCP) is a way for AI assistants like Claude Code to connect to external tools and services. Think of it as a "plugin system" that lets Claude Code talk to other applications. In this tutorial, we will use MCP to connect Claude Code to Jira so Claude can read your project tasks directly.
 
-### 1.1 Add Atlassian MCP Server
+### 1.1 Add Atlassian Rovo MCP Server
 
 **Steps:**
 
 1. Open Cursor and navigate to your tutorial project
 2. Use the existing terminal, or open a new one (**Terminal** → **New Terminal**)
 3. **If Claude Code is currently running**, type `/exit` to quit first. You need to add the MCP server before starting Claude Code.
-4. Run the following command to add the Atlassian MCP server:
+4. Run the following command to add the Atlassian Rovo MCP server:
 
    ```bash
    claude mcp add --transport sse atlassian https://mcp.atlassian.com/v1/sse
@@ -577,7 +577,7 @@ Copy the public URL and share it! Anyone with the link can view your dashboard.
 Verify everything is complete:
 
 ### MCP Integration
-- [ ] Atlassian MCP server connected to Claude Code
+- [ ] Atlassian Rovo MCP server connected to Claude Code
 - [ ] Claude can access your Jira workspace
 
 ### Spec-Kit Artifacts
