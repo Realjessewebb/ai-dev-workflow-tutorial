@@ -46,11 +46,14 @@ Use this checklist when setting up your actual capstone project. Each team membe
   - .gitignore for your tech stack
   - LICENSE if applicable
 
-- [ ] **Clone the repository** to your local machine. In the terminal:
-  ```bash
-  git clone https://github.com/team/capstone-project.git
-  cd capstone-project
-  ```
+- [ ] **Clone the repository** to your local machine using Cursor:
+  1. On your repository page on GitHub, click the green **Code** button
+  2. Make sure **HTTPS** is selected and copy the URL
+  3. Open Cursor → **File** → **New Window**
+  4. Click **Clone Repo**
+  5. Paste the repository URL and press **Enter/Return**
+  6. Choose a location (e.g., your `GitHub` folder)
+  7. Click **Open** when prompted
 
 ### Jira Setup (For Teams)
 
