@@ -321,7 +321,12 @@ Break the plan into specific, actionable tasks.
    ```
 
 2. Claude will automatically parse your specification and plan, then output a list of tasks
-3. Review the tasks — you should see something like:
+
+3. Preview the generated tasks:
+   - In Cursor's file explorer, navigate to `specs/` and open your feature folder (e.g., `001-sales-dashboard/`)
+   - Right-click `tasks.md` and select **Open Preview**
+
+4. Review the tasks — you should see something like:
    - Set up Python virtual environment and dependencies
    - Create main Streamlit app structure
    - Implement KPI scorecards
@@ -329,7 +334,7 @@ Break the plan into specific, actionable tasks.
    - Implement category bar chart
    - Implement region bar chart
 
-**Checkpoint:** You have a clear list of implementation tasks.
+**Checkpoint:** A tasks file exists at `specs/[feature-name]/tasks.md` with clear implementation steps.
 
 ---
 
