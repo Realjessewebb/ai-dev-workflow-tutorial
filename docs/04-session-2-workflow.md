@@ -546,12 +546,20 @@ Now repeat the cycle for each remaining Jira issue:
    Implement ECOM-2 and move it to In Progress in Jira.
    ```
 
+   *Replace `ECOM-2` with the issue Claude recommended.*
+
 3. **Test your changes** — follow Claude's instructions to verify the implementation works.
 
 4. **Commit, push, and update Jira** (same as section 4.2):
    ```
-   Commit my changes for ECOM-2, push to GitHub, and update the Jira issue with git info and mark it Done.
+   Commit my changes for ECOM-2, push to GitHub, and update the Jira issue with a summary of what was implemented, commit hash, branch name, and GitHub link. Mark it Done.
    ```
+
+   *Replace `ECOM-2` with your actual issue key.*
+
+5. **Verify completion:**
+   - Jira issue shows "Done" with a detailed comment
+   - Tasks marked `[x]` in tasks.md
 
 Repeat this cycle until all issues are complete. You can also ask Claude to fix or improve things:
 
@@ -559,7 +567,7 @@ Repeat this cycle until all issues are complete. You can also ask Claude to fix 
 The chart colors don't match our brand. Can you update them?
 ```
 
-**Checkpoint:** All Jira issues are marked "Done" with git info comments. The dashboard displays all features correctly.
+**Checkpoint:** All Jira issues are marked "Done" with comments showing what was implemented and git info. All tasks marked `[x]` in tasks.md.
 
 ---
 
