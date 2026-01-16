@@ -750,7 +750,7 @@ This is the workflow you will use for your capstone project.
 
 ## 8. What to Submit
 
-Submit the following to Brightspace under the **AI Dev Workflow Tutorial** assignment:
+**Due: January 25** — Submit the following to Brightspace under the **AI Dev Workflow Tutorial** assignment:
 
 1. **GitHub repository link** - Your public repo URL (e.g., `https://github.com/yourusername/ai-dev-workflow-tutorial`)
 
