@@ -272,11 +272,9 @@ Break the plan into specific, actionable tasks.
 1. In Claude Code, run:
    ```
    /speckit.tasks
-
-   Generate implementation tasks from the plan.
    ```
 
-2. Claude will output a list of tasks
+2. Claude will automatically parse your specification and plan, then output a list of tasks
 3. Review the tasks — you should see something like:
    - Set up Python virtual environment and dependencies
    - Create main Streamlit app structure
@@ -399,10 +397,10 @@ Now use Claude Code to build the dashboard.
 
 1. In Claude Code:
    ```
-   /speckit.implement ECOM-1
+   /speckit.implement
    ```
 
-2. Claude will:
+2. Claude will automatically use your tasks file to:
    - Analyze the CSV data structure
    - Create the dashboard code
    - Explain what each part does
