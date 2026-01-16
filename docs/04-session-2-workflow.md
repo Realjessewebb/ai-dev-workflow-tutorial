@@ -588,28 +588,37 @@ The chart colors don't match our brand. Can you update them?
 
 Spec-kit created a feature branch for your work. Now that implementation is complete, merge your changes back to the main branch.
 
+> **What is a merge?** Merging combines your feature branch changes into the main branch. It's like saying "my feature is done and tested — add it to the official version." After merging, main contains all your new code.
+
 **Steps:**
 
-1. In the terminal (not Claude Code), check which branch you're on:
-   ```bash
-   git branch
+1. Ask Claude to check which branch you're on:
    ```
-   You should see an asterisk (*) next to a branch name like `001-sales-dashboard`.
+   Which git branch am I on?
+   ```
 
-2. Ask Claude Code to merge your work into main:
+   You should be on your feature branch (e.g., `001-sales-dashboard`).
+
+2. Ask Claude to merge your work into main:
    ```
    Merge my current feature branch into main
    ```
 
    Claude will switch to the main branch and merge your changes.
 
-3. Verify you're now on main:
-   ```bash
-   git branch
+3. Push main to GitHub:
    ```
-   The asterisk (*) should now be next to `main`.
+   Push main to GitHub
+   ```
 
-**Checkpoint:** You are on the `main` branch with all your dashboard changes included.
+   This updates GitHub with your merged code.
+
+4. Verify on GitHub:
+   - Go to your repository on GitHub
+   - Make sure you're viewing the **main** branch
+   - You should see all your dashboard files
+
+**Checkpoint:** The `main` branch on GitHub contains all your dashboard code.
 
 ---
 
