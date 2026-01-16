@@ -198,7 +198,7 @@ The constitution establishes principles and guidelines for your project. It ensu
    Create a constitution for our e-commerce analytics project.
    The project will build a Streamlit dashboard for sales data visualization.
    Key principles should include:
-   - Simplicity over complexity
+   - Simple, readable code structure
    - Clear, readable code
    - User-friendly visualizations
    - Following Python best practices
