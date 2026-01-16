@@ -364,9 +364,9 @@ Claude Code is most helpful when you:
 Follow the spec-kit workflow from [Section 4](#4-spec-kit-workflow-for-capstone):
 
 1. **Pick a Jira issue** and assign it to yourself
-2. **Create a feature branch**:
+2. **Switch to your feature branch** — spec-kit created this when you ran `/speckit.specify`:
    ```
-   Pull latest main and create a feature branch for PROJ-123
+   Switch to my feature branch
    ```
 3. **Implement** using `/speckit.implement`
 4. **Commit and push**:
