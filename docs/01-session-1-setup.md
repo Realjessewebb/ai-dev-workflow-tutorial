@@ -461,6 +461,8 @@ Cloning downloads the repository to your computer. Cursor has a built-in feature
 
 **Checkpoint:** You can see the tutorial files in Cursor's file explorer (left sidebar).
 
+> **Can't see the sidebar?** Press `Cmd+B` (macOS) or `Ctrl+B` (Windows) to toggle it. Or go to **View** → **Appearance** → **Toggle Primary Side Bar**.
+
 ---
 
 ### 3.3 Initialize Claude Code
