@@ -17,8 +17,8 @@ import os
 st.set_page_config(page_title="ShopSmart Sales Dashboard", layout="wide")
 
 
-# Data file path
-DATA_FILE_PATH = "ai-dev-workflow-tutorial/data/sales-data.csv"
+# Data file path (relative to project root)
+DATA_FILE_PATH = "data/sales-data.csv"
 
 
 @st.cache_data
