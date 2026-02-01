@@ -97,13 +97,13 @@ This project uses a **single-file structure** - all code in `app.py` at reposito
 
 ### Implementation for User Story 3
 
-- [ ] T025 [US3] Implement `create_category_chart(df)` function in app.py that groups by category, sums total_amount, sorts descending, creates Plotly bar chart per research.md
-- [ ] T026 [US3] Configure category bar chart in app.py with title "Sales by Product Category", axis labels per FR-013/FR-014, professional green color (#2ca02c)
-- [ ] T027 [US3] Add custom hover template to category chart in app.py showing category name and sales amount formatted as currency
-- [ ] T028 [US3] Update layout in app.py to include y-axis currency formatting, height=400, and `xaxis={'categoryorder': 'total descending'}` to ensure sort per FR-008
-- [ ] T029 [US3] Create two-column layout in main() function in app.py after trend chart for category and region charts
-- [ ] T030 [US3] Add category chart to left column in app.py using `st.plotly_chart(create_category_chart(df), use_container_width=True)`
-- [ ] T031 [US3] Test locally and verify all 5 categories display sorted correctly (Electronics, Accessories, Audio, Wearables, Smart Home in descending sales order)
+- [x] T025 [US3] Implement `create_category_chart(df)` function in app.py that groups by category, sums total_amount, sorts descending, creates Plotly bar chart per research.md
+- [x] T026 [US3] Configure category bar chart in app.py with title "Sales by Product Category", axis labels per FR-013/FR-014, professional green color (#2ca02c)
+- [x] T027 [US3] Add custom hover template to category chart in app.py showing category name and sales amount formatted as currency
+- [x] T028 [US3] Update layout in app.py to include y-axis currency formatting, height=400, and `xaxis={'categoryorder': 'total descending'}` to ensure sort per FR-008
+- [x] T029 [US3] Create two-column layout in main() function in app.py after trend chart for category and region charts
+- [x] T030 [US3] Add category chart to left column in app.py using `st.plotly_chart(create_category_chart(df), use_container_width=True)`
+- [x] T031 [US3] Test locally and verify all 5 categories display sorted correctly (Electronics, Accessories, Audio, Wearables, Smart Home in descending sales order)
 
 **Checkpoint**: User Stories 1, 2, AND 3 complete - Dashboard shows KPIs + trend + category analysis
 

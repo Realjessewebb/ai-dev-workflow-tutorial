@@ -177,6 +177,55 @@ def create_sales_trend_chart(df):
     return fig
 
 
+def create_category_chart(df):
+    """
+    Create bar chart showing sales by product category, sorted descending.
+
+    This chart helps Product Manager Mike identify which product categories
+    are performing best to inform inventory and marketing decisions.
+
+    Args:
+        df (pandas.DataFrame): Transaction data with 'category' and 'total_amount' columns
+
+    Returns:
+        plotly.graph_objects.Figure: Interactive bar chart with:
+            - X-axis: Product category
+            - Y-axis: Total sales (USD, currency formatted)
+            - Bars sorted descending by sales value
+            - Tooltips: Category name and exact sales value on hover
+    """
+    # Group by category and sum sales
+    category_sales = df.groupby('category')['total_amount'].sum()
+    category_sales = category_sales.sort_values(ascending=False).reset_index()
+
+    # Create bar chart using Plotly Express
+    fig = px.bar(
+        category_sales,
+        x='category',
+        y='total_amount',
+        title='Sales by Product Category',
+        labels={
+            'category': 'Product Category',
+            'total_amount': 'Total Sales ($)'
+        }
+    )
+
+    # Apply professional styling with green color
+    fig.update_traces(
+        marker_color='#2ca02c',  # Professional green color
+        hovertemplate='<b>%{x}</b><br>Sales: $%{y:,.2f}<extra></extra>'
+    )
+
+    # Configure layout with currency formatting and descending sort
+    fig.update_layout(
+        yaxis_tickformat='$,.0f',  # Currency format on y-axis
+        xaxis={'categoryorder': 'total descending'},  # Ensure descending sort
+        height=400
+    )
+
+    return fig
+
+
 def main():
     """Main application function that builds the dashboard layout."""
 
@@ -210,6 +259,13 @@ def main():
 
     # Display sales trend line chart
     st.plotly_chart(create_sales_trend_chart(df), use_container_width=True)
+
+    # Create two-column layout for category and region charts
+    col3, col4 = st.columns(2)
+
+    # Display category breakdown chart in left column
+    with col3:
+        st.plotly_chart(create_category_chart(df), use_container_width=True)
 
 
 if __name__ == "__main__":
