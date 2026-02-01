@@ -226,6 +226,55 @@ def create_category_chart(df):
     return fig
 
 
+def create_region_chart(df):
+    """
+    Create bar chart showing sales by region, sorted descending.
+
+    This chart helps Operations Director Lisa compare regional performance
+    to optimize resource allocation and identify underperforming markets.
+
+    Args:
+        df (pandas.DataFrame): Transaction data with 'region' and 'total_amount' columns
+
+    Returns:
+        plotly.graph_objects.Figure: Interactive bar chart with:
+            - X-axis: Region
+            - Y-axis: Total sales (USD, currency formatted)
+            - Bars sorted descending by sales value
+            - Tooltips: Region name and exact sales value on hover
+    """
+    # Group by region and sum sales
+    region_sales = df.groupby('region')['total_amount'].sum()
+    region_sales = region_sales.sort_values(ascending=False).reset_index()
+
+    # Create bar chart using Plotly Express
+    fig = px.bar(
+        region_sales,
+        x='region',
+        y='total_amount',
+        title='Sales by Region',
+        labels={
+            'region': 'Region',
+            'total_amount': 'Total Sales ($)'
+        }
+    )
+
+    # Apply professional styling with orange color
+    fig.update_traces(
+        marker_color='#ff7f0e',  # Professional orange color
+        hovertemplate='<b>%{x}</b><br>Sales: $%{y:,.2f}<extra></extra>'
+    )
+
+    # Configure layout with currency formatting and descending sort
+    fig.update_layout(
+        yaxis_tickformat='$,.0f',  # Currency format on y-axis
+        xaxis={'categoryorder': 'total descending'},  # Ensure descending sort
+        height=400
+    )
+
+    return fig
+
+
 def main():
     """Main application function that builds the dashboard layout."""
 
@@ -266,6 +315,10 @@ def main():
     # Display category breakdown chart in left column
     with col3:
         st.plotly_chart(create_category_chart(df), use_container_width=True)
+
+    # Display regional breakdown chart in right column
+    with col4:
+        st.plotly_chart(create_region_chart(df), use_container_width=True)
 
 
 if __name__ == "__main__":

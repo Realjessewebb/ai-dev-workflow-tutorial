@@ -117,12 +117,12 @@ This project uses a **single-file structure** - all code in `app.py` at reposito
 
 ### Implementation for User Story 4
 
-- [ ] T032 [US4] Implement `create_region_chart(df)` function in app.py that groups by region, sums total_amount, sorts descending, creates Plotly bar chart per research.md
-- [ ] T033 [US4] Configure region bar chart in app.py with title "Sales by Region", axis labels per FR-013/FR-014, professional color scheme
-- [ ] T034 [US4] Add custom hover template to region chart in app.py showing region name and sales amount formatted as currency
-- [ ] T035 [US4] Update layout in app.py to include y-axis currency formatting, height=400, and `xaxis={'categoryorder': 'total descending'}` to ensure sort per FR-010
-- [ ] T036 [US4] Add region chart to right column in app.py (created in T029) using `st.plotly_chart(create_region_chart(df), use_container_width=True)`
-- [ ] T037 [US4] Test locally and verify all 4 regions display sorted correctly (North, South, East, West in descending sales order)
+- [x] T032 [US4] Implement `create_region_chart(df)` function in app.py that groups by region, sums total_amount, sorts descending, creates Plotly bar chart per research.md
+- [x] T033 [US4] Configure region bar chart in app.py with title "Sales by Region", axis labels per FR-013/FR-014, professional color scheme
+- [x] T034 [US4] Add custom hover template to region chart in app.py showing region name and sales amount formatted as currency
+- [x] T035 [US4] Update layout in app.py to include y-axis currency formatting, height=400, and `xaxis={'categoryorder': 'total descending'}` to ensure sort per FR-010
+- [x] T036 [US4] Add region chart to right column in app.py (created in T029) using `st.plotly_chart(create_region_chart(df), use_container_width=True)`
+- [x] T037 [US4] Test locally and verify all 4 regions display sorted correctly (North, South, East, West in descending sales order)
 
 **Checkpoint**: All user stories complete - Full dashboard functional with KPIs + trend + category + region analysis
 
