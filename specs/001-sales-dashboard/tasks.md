@@ -140,11 +140,11 @@ This project uses a **single-file structure** - all code in `app.py` at reposito
 - [x] T043 Add code comments in app.py explaining business logic for KPI calculations and chart configurations per Constitution principle I (Educational Clarity)
 - [x] T044 Review code for PEP 8 compliance: check snake_case naming, proper spacing, clear function names per Constitution principle V
 - [x] T045 Update main project README.md with quickstart instructions, dashboard description, and local setup steps
-- [ ] T046 Commit all changes with Jira issue key: `git commit -m "ECOM-X: implement sales dashboard with KPIs and charts"`
-- [ ] T047 Push feature branch to GitHub: `git push origin 001-sales-dashboard`
-- [ ] T048 Merge to main branch: `git checkout main && git merge 001-sales-dashboard && git push origin main`
-- [ ] T049 Deploy to Streamlit Community Cloud from main branch per quickstart.md section 6
-- [ ] T050 Verify production deployment and update Jira issue with public URL
+- [x] T046 Commit all changes with Jira issue key: `git commit -m "ECOM-X: implement sales dashboard with KPIs and charts"`
+- [x] T047 Push feature branch to GitHub: `git push origin 001-sales-dashboard`
+- [x] T048 Merge to main branch: `git checkout main && git merge 001-sales-dashboard && git push origin main`
+- [x] T049 Deploy to Streamlit Community Cloud from main branch per quickstart.md section 6
+- [x] T050 Verify production deployment and update Jira issue with public URL
 
 ---
 
