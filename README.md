@@ -138,6 +138,31 @@ No prior experience with Git, Jira, or AI tools is required. You should have:
 2. Follow [Session 1: Setup](docs/01-session-1-setup.md) to configure your environment
 3. Continue with [Session 2: Workflow](docs/04-session-2-workflow.md) to build the dashboard
 
+## Running the Dashboard
+
+Once you've completed the tutorial, you can run the sales analytics dashboard locally:
+
+```bash
+# Ensure you're in the project root directory
+cd ai-dev-workflow-tutorial
+
+# Activate virtual environment
+source venv/bin/activate  # macOS/Linux
+# or
+venv\Scripts\activate     # Windows
+
+# Run the dashboard
+streamlit run app.py
+```
+
+The dashboard will open in your browser at `http://localhost:8501` and display:
+- **KPI Cards**: Total Sales (~$650K-700K) and Total Orders (482)
+- **Sales Trend**: Line chart showing sales over 12 months
+- **Category Breakdown**: Bar chart of sales by product category (5 categories)
+- **Regional Breakdown**: Bar chart of sales by region (4 regions)
+
+Press `Ctrl+C` in the terminal to stop the server.
+
 ## Naming Conventions
 
 This tutorial uses consistent naming conventions:

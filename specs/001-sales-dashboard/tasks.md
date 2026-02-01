@@ -132,14 +132,14 @@ This project uses a **single-file structure** - all code in `app.py` at reposito
 
 **Purpose**: Final validation, documentation, and deployment preparation
 
-- [ ] T038 Run complete validation testing per quickstart.md success criteria checklist (SC-001 through SC-009)
-- [ ] T039 Verify dashboard loads within 5 seconds (SC-001) and charts render within 7 seconds total (SC-002)
-- [ ] T040 Verify all metrics match expected values: Total Sales ~$650K-$700K, Total Orders = 482 (SC-006)
-- [ ] T041 Test edge cases: missing CSV file, malformed CSV, empty CSV per spec.md edge cases section
-- [ ] T042 Verify no errors or warnings displayed in terminal when running with valid data (SC-007)
-- [ ] T043 Add code comments in app.py explaining business logic for KPI calculations and chart configurations per Constitution principle I (Educational Clarity)
-- [ ] T044 Review code for PEP 8 compliance: check snake_case naming, proper spacing, clear function names per Constitution principle V
-- [ ] T045 Update main project README.md with quickstart instructions, dashboard description, and local setup steps
+- [x] T038 Run complete validation testing per quickstart.md success criteria checklist (SC-001 through SC-009)
+- [x] T039 Verify dashboard loads within 5 seconds (SC-001) and charts render within 7 seconds total (SC-002)
+- [x] T040 Verify all metrics match expected values: Total Sales ~$650K-$700K, Total Orders = 482 (SC-006)
+- [x] T041 Test edge cases: missing CSV file, malformed CSV, empty CSV per spec.md edge cases section
+- [x] T042 Verify no errors or warnings displayed in terminal when running with valid data (SC-007)
+- [x] T043 Add code comments in app.py explaining business logic for KPI calculations and chart configurations per Constitution principle I (Educational Clarity)
+- [x] T044 Review code for PEP 8 compliance: check snake_case naming, proper spacing, clear function names per Constitution principle V
+- [x] T045 Update main project README.md with quickstart instructions, dashboard description, and local setup steps
 - [ ] T046 Commit all changes with Jira issue key: `git commit -m "ECOM-X: implement sales dashboard with KPIs and charts"`
 - [ ] T047 Push feature branch to GitHub: `git push origin 001-sales-dashboard`
 - [ ] T048 Merge to main branch: `git checkout main && git merge 001-sales-dashboard && git push origin main`
