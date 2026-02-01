@@ -130,6 +130,53 @@ def calculate_kpis(df):
     }
 
 
+def create_sales_trend_chart(df):
+    """
+    Create line chart showing sales trend over time.
+
+    This chart helps stakeholders understand business trajectory (growth/decline)
+    by visualizing daily sales totals across the 12-month historical period.
+
+    Args:
+        df (pandas.DataFrame): Transaction data with 'date' and 'total_amount' columns
+
+    Returns:
+        plotly.graph_objects.Figure: Interactive line chart with:
+            - X-axis: Date (chronological)
+            - Y-axis: Sales amount (USD, currency formatted)
+            - Tooltips: Date and exact sales value on hover
+    """
+    # Group by date and sum sales for each day
+    daily_sales = df.groupby('date')['total_amount'].sum().reset_index()
+
+    # Create line chart using Plotly Express
+    fig = px.line(
+        daily_sales,
+        x='date',
+        y='total_amount',
+        title='Sales Trend Over Time',
+        labels={
+            'date': 'Date',
+            'total_amount': 'Sales ($)'
+        }
+    )
+
+    # Apply professional styling with blue color
+    fig.update_traces(
+        line_color='#1f77b4',  # Professional blue color
+        hovertemplate='<b>Date</b>: %{x|%Y-%m-%d}<br>' +
+                     '<b>Sales</b>: $%{y:,.2f}<extra></extra>'
+    )
+
+    # Configure layout with currency formatting and appropriate height
+    fig.update_layout(
+        yaxis_tickformat='$,.0f',  # Currency format on y-axis
+        height=400
+    )
+
+    return fig
+
+
 def main():
     """Main application function that builds the dashboard layout."""
 
@@ -160,6 +207,9 @@ def main():
             label="Total Orders",
             value=f"{total_orders:,}"
         )
+
+    # Display sales trend line chart
+    st.plotly_chart(create_sales_trend_chart(df), use_container_width=True)
 
 
 if __name__ == "__main__":

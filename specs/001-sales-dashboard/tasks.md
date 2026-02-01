@@ -78,12 +78,12 @@ This project uses a **single-file structure** - all code in `app.py` at reposito
 
 ### Implementation for User Story 2
 
-- [ ] T019 [US2] Implement `create_sales_trend_chart(df)` function in app.py that groups by date, sums total_amount, creates Plotly line chart per research.md section 3
-- [ ] T020 [US2] Configure line chart in app.py with title "Sales Trend Over Time", axis labels per FR-013/FR-014, professional blue color (#1f77b4)
-- [ ] T021 [US2] Add custom hover template to line chart in app.py showing date and sales amount formatted as currency per research.md
-- [ ] T022 [US2] Update layout in app.py to include y-axis currency formatting `yaxis_tickformat='$,.0f'` and height=400
-- [ ] T023 [US2] Add line chart to main() function in app.py after KPI cards using `st.plotly_chart(create_sales_trend_chart(df), use_container_width=True)`
-- [ ] T024 [US2] Test locally and verify line chart displays all 12 months of data with correct chronological order and interactive tooltips per SC-009
+- [x] T019 [US2] Implement `create_sales_trend_chart(df)` function in app.py that groups by date, sums total_amount, creates Plotly line chart per research.md section 3
+- [x] T020 [US2] Configure line chart in app.py with title "Sales Trend Over Time", axis labels per FR-013/FR-014, professional blue color (#1f77b4)
+- [x] T021 [US2] Add custom hover template to line chart in app.py showing date and sales amount formatted as currency per research.md
+- [x] T022 [US2] Update layout in app.py to include y-axis currency formatting `yaxis_tickformat='$,.0f'` and height=400
+- [x] T023 [US2] Add line chart to main() function in app.py after KPI cards using `st.plotly_chart(create_sales_trend_chart(df), use_container_width=True)`
+- [x] T024 [US2] Test locally and verify line chart displays all 12 months of data with correct chronological order and interactive tooltips per SC-009
 
 **Checkpoint**: User Stories 1 AND 2 complete - Dashboard shows KPIs + trend analysis, both independently testable
 
